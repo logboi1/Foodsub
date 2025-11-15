@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.top-bar {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 20px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+}
+
+.log {
+    color:white;
+    padding: 14px;
+    background-color: rgb(117, 117, 224);
+    border:none;
+    border-radius: 20px;
+    font-size: 20px;   
+}
+
+.logo {
+  font-weight: bold;
+  color:skyblue;
+  font-size: 20px;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links .login,
+.nav-links .register {
+  border: 1px solid blue;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: blue;
+}
+
+
+.hero {
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.hero-text button {
+  background-color: white;
+  color: blue;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.hero-image .sample {
+  width: 300px;
+  height: 250px;
+  background-color: azure;
+  border-radius: 15px;
+}
+
+/* -- login Page -- */
+.auth-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 50px;
+}
+
+.auth-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-form {
+  width: 80%;
+  max-width: 350px;
+  border: 2px solid purple;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.auth-form h2 {
+  color: purple;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.auth-form .welcome-text {
+  text-align: center;
+  color: purple;
+  margin-bottom: 20px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] 
+{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  width: 100%;
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-form .options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.auth-form .options a {
+  color: purple;
+  text-decoration: none;
+}
+
+.google-signup {
+  text-align: center;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+
+.phone-image,
+.welcome-image {
+  width: 250px;
+  height: 250px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
