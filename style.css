@@ -1,13 +1,15 @@
+/* Global reset to ensure consistent spacing and box model across all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styling with viewport height and hidden overflow to prevent scrolling */
 body {
   font-family: Arial, sans-serif;
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden; /* Prevents page scrolling to fit everything in viewport */
 }
 
 
@@ -20,83 +22,96 @@ body {
 }
 
 
+/* Navbar container - matches reference image with proper spacing and subtle shadow */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 60px;
+  padding: 18px 60px; /* Adjusted padding to match reference image */
   background: white;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* Subtle shadow for depth */
 }
+
+/* Circular green badge containing 'F' letter in logo */
+
 
 .log {
-  color: white;
-  padding: 6px 11px;
-  background-color: rgb(50, 155, 82);
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4EB270;
+  padding: 6px 12px;
   border-radius: 50%;
-  font-size: 16px;
+  color: white;
   font-weight: bold;
-  display: inline-block;
-  line-height: 1;
+  font-size: 15px;
 }
 
+/* Logo text styling next to the circular badge */
 .logo {
   font-weight: 600;
-  color: #2d2d2d;
+  color: #2d2d2d; /* Dark gray to match reference */
   font-size: 18px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 8px; /* Space between badge and text */
 }
 
+/* Container for all navigation links and buttons */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 30px; /* Consistent spacing between all nav items */
 }
 
+/* Regular navigation links (Download, How to, Pricing, Demo) */
 .nav-links .nav-link {
   text-decoration: none;
   color: #333;
   font-size: 15px;
   font-weight: 400;
-  transition: color 0.3s;
+  transition: color 0.3s; /* Smooth color transition on hover */
 }
 
+/* Hover effect for regular nav links - changes to brand green */
 .nav-links .nav-link:hover {
   color: rgb(50, 155, 82);
 }
 
+/* Base styling for Login and Register buttons */
 .nav-links .login,
 .nav-links .register {
   text-decoration: none;
   font-size: 15px;
-  padding: 8px 24px;
-  border-radius: 6px;
-  transition: all 0.3s;
+  padding: 8px 24px; /* Button padding to match reference */
+  border-radius: 6px; /* Rounded corners */
+  transition: all 0.3s; /* Smooth transition for all properties */
   font-weight: 500;
 }
 
+/* Login button - filled green background with white text */
 .nav-links .login {
-  background-color: rgb(50, 155, 82);
+  background-color: rgb(50, 155, 82); /* Brand green fill */
   color: white;
   border: 2px solid rgb(50, 155, 82);
 }
 
+/* Login button hover effect - darker green */
 .nav-links .login:hover {
   background-color: rgb(40, 140, 70);
   border-color: rgb(40, 140, 70);
 }
 
+/* Register button - outlined style with green border and text */
 .nav-links .register {
-  border: 2px solid rgb(50, 155, 82);
-  color: rgb(50, 155, 82);
+  border: 2px solid rgb(50, 155, 82); /* Green border */
+  color: rgb(50, 155, 82); /* Green text */
   background: white;
 }
 
+/* Register button hover effect - subtle green background */
 .nav-links .register:hover {
-  background-color: rgba(50, 155, 82, 0.05);
+  background-color: rgba(50, 155, 82, 0.05); /* Very light green tint */
 }
 
 .hero {
@@ -141,14 +156,15 @@ body {
   border-radius: 15px;
 }
 
-/* -- login Page -- */
+/* -- Login/Register Page Layout -- */
+/* Main container for login/register pages - centers content and prevents scrolling */
 .auth-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 70px); /* Full viewport height minus navbar height */
   padding: 0 80px;
-  gap: 100px;
+  gap: 100px; /* Space between illustration and form */
 }
 
 .auth-left {
@@ -165,80 +181,89 @@ body {
   align-items: center;
 }
 
+/* Login/Register form container with green border */
 .auth-form {
   width: 100%;
-  max-width: 420px;
-  border: 3px solid rgb(50, 155, 82);
-  border-radius: 12px;
-  padding: 40px 35px;
+  max-width: 420px; /* Limits form width for better readability */
+  border: 3px solid rgb(50, 155, 82); /* Green border to match brand */
+  border-radius: 12px; /* Rounded corners */
+  padding: 40px 35px; /* Internal spacing */
   background: white;
 }
 
+/* Form title (LOGIN/SIGN UP) styling */
 .auth-form h2 {
-  color: rgb(50, 155, 82);
+  color: rgb(50, 155, 82); /* Brand green color */
   text-align: center;
   margin-bottom: 5px;
   font-size: 24px;
   font-weight: 600;
 }
 
-
+/* Welcome message below title (e.g., "Welcome Back 🎉") */
 .welcome-text{
-  color: #9B9B9B;
+  color: #9B9B9B; /* Gray text for subtitle */
   text-align: center;
   font-size: 24px;
   margin: 6px 0 12px 0;
 }
 
 
+/* Text and password input fields styling */
 .auth-form input[type="text"],
 .auth-form input[type="password"] {
   width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  padding: 12px 15px; /* Comfortable input padding */
+  margin-bottom: 15px; /* Space between inputs */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 6px; /* Rounded corners */
   font-size: 14px;
 }
 
+/* Placeholder text color for input fields */
 .auth-form input[type="text"]::placeholder,
 .auth-form input[type="password"]::placeholder {
-  color: #aaa;
+  color: #aaa; /* Light gray placeholder text */
 }
 
+/* Submit button (Login/Sign up) styling */
 .auth-form button {
   width: 100%;
-  background-color: rgb(50, 155, 82);
+  background-color: rgb(50, 155, 82); /* Brand green background */
   color: white;
   border: none;
   padding: 12px;
-  border-radius: 6px;
+  border-radius: 6px; /* Rounded corners */
   cursor: pointer;
   margin-top: 10px;
   font-size: 16px;
   font-weight: 500;
 }
 
+/* Container for Remember Me checkbox and Forget password link */
 .auth-form .options {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Pushes items to opposite ends */
   align-items: center;
   font-size: 13px;
   margin-bottom: 5px;
 }
 
+/* Remember Me checkbox label styling */
 .auth-form .options label {
   display: flex;
   align-items: center;
-  gap: 5px;
-  color: #666;
+  gap: 5px; /* Space between checkbox and text */
+  color: #666; /* Gray text */
 }
 
+/* Forget password link styling */
 .auth-form .options a {
-  color: rgb(50, 155, 82);
+  color: rgb(50, 155, 82); /* Brand green link */
   text-decoration: none;
 }
 
+/* Google sign up button styling (for register page) */
 .google-signup {
   text-align: center;
   margin-top: 15px;
@@ -248,20 +273,21 @@ body {
   font-size: 14px;
 }
 
-
+/* Container for illustrations on login/register pages */
 .phone-image,
 .welcome-image {
   width: 100%;
-  max-width: 350px;
+  max-width: 350px; /* Limits image size */
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Responsive image styling to maintain aspect ratio */
 .phone-image img,
 .welcome-image img {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: contain; /* Maintains aspect ratio without distortion */
 }
