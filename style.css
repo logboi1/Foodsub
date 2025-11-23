@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.top-bar {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 20px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.log {
+  color: white;
+  padding: 6px 11px;
+  background-color: rgb(50, 155, 82);
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1;
+}
+
+.logo {
+  font-weight: 600;
+  color: #2d2d2d;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links .nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.nav-links .nav-link:hover {
+  color: rgb(50, 155, 82);
+}
+
+.nav-links .login,
+.nav-links .register {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 24px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.nav-links .login {
+  background-color: rgb(50, 155, 82);
+  color: white;
+  border: 2px solid rgb(50, 155, 82);
+}
+
+.nav-links .login:hover {
+  background-color: rgb(40, 140, 70);
+  border-color: rgb(40, 140, 70);
+}
+
+.nav-links .register {
+  border: 2px solid rgb(50, 155, 82);
+  color: rgb(50, 155, 82);
+  background: white;
+}
+
+.nav-links .register:hover {
+  background-color: rgba(50, 155, 82, 0.05);
+}
+
+.hero {
+  background-color: rgb(50, 155, 82);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.hero-text button {
+  background-color: white;
+  color: blue;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.hero-image .sample {
+  width: 300px;
+  height: 250px;
+  background-color: azure;
+  border-radius: 15px;
+}
+
+/* -- login Page -- */
+.auth-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px);
+  padding: 0 80px;
+  gap: 100px;
+}
+
+.auth-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 420px;
+  border: 3px solid rgb(50, 155, 82);
+  border-radius: 12px;
+  padding: 40px 35px;
+  background: white;
+}
+
+.auth-form h2 {
+  color: rgb(50, 155, 82);
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+.welcome-text{
+  color: #9B9B9B;
+  text-align: center;
+  font-size: 24px;
+  margin: 6px 0 12px 0;
+}
+
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.auth-form input[type="text"]::placeholder,
+.auth-form input[type="password"]::placeholder {
+  color: #aaa;
+}
+
+.auth-form button {
+  width: 100%;
+  background-color: rgb(50, 155, 82);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.auth-form .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.auth-form .options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+}
+
+.auth-form .options a {
+  color: rgb(50, 155, 82);
+  text-decoration: none;
+}
+
+.google-signup {
+  text-align: center;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+
+.phone-image,
+.welcome-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-image img,
+.welcome-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
